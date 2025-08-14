@@ -122,3 +122,72 @@ body{
     line-height: 1.6;
     margin-bottom: 20px;
 }
+.trophies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+.trophy-card {
+    background-color: var(--text-BG-color);
+    border: 2px solid #FF0000;
+    border-radius: 16px;
+    padding: 20px 10px;
+    width: 350px;
+    min-height: 480px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.trophy-image {
+    width: 100%;
+    max-width: 600+px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    object-fit: cover;
+}
+.trophy-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.trophy-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.trophy-text {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 0;
+}
+@media (max-width: 900px) {
+    .players-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .player-image {
+        max-width: 250px;
+        margin-bottom: 5px;
+        height: auto;
+    }
+    .trophies {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trophy-image {
+        max-width: 90vw;
+    }
+}
+#stanley{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
