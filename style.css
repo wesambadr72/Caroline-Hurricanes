@@ -122,6 +122,9 @@ body{
     line-height: 1.6;
     margin-bottom: 20px;
 }
+#trophies{
+    margin-top: 100px;
+}
 .trophies {
     display: flex;
     justify-content: center;
@@ -137,7 +140,7 @@ body{
     width: 100%;
     height: auto;
     min-height: 480px;
-    max-width: 400px;
+    max-width: 38vw;
     max-height: fit-content;
     box-sizing: border-box;
     display: flex;
@@ -147,11 +150,14 @@ body{
 }
 .trophy-image {
     width: 100%;
-    max-width: 600px;
-    height: auto;
+    height: 350px;
+    border: 2px solid #FF0000;
     border-radius: 10px;
     margin-bottom: 18px;
     object-fit: cover;
+}
+#stanley {
+    height: auto;
 }
 .trophy-number {
     font-size: 2.5em;
@@ -169,18 +175,9 @@ body{
 .trophy-text {
     font-size: 1.2em;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 @media (max-width: 900px) {
-    .players-row {
-        flex-direction: column;
-        align-items: center;
-    }
-    .player-image {
-        max-width: 250px;
-        margin-bottom: 5px;
-        height: auto;
-    }
     .trophies {
         flex-direction: column;
         align-items: center;
@@ -188,4 +185,37 @@ body{
     .trophy-image {
         max-width: 90vw;
     }
+    .trophy-card {
+        max-width: 90vw;
+    }
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+}
+.footer-text {
+    font-size: 1.2em;
+    margin: 0;
+}
+.footer-text a{
+    color: #FF0000;
+}
+.footer-text a:hover , .social-icon:hover {
+    color: #FFFFFF;
+}
+.social-icon:active {
+    color: #FF0000;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content .footer-logo {
+    margin-left: 10px;
+    margin-top: 40px;
+    height: 40px;
+    width: auto;
 }
