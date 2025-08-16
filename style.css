@@ -10,6 +10,30 @@ body{
     color: #FFFFFF;
     overflow-x: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: #FF0000;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.section-hidden{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s, transform 0.8s;
+    background-color: transparent;
+}
+.section-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s, transform 0.8s;
+    background-color: transparent;
+}
 .title{
     text-align: center;
     font-size: 3em;
@@ -77,12 +101,21 @@ body{
     justify-content: space-around;
     width: 100%;
     margin-top: 10px;
+    animation: fadeIn 2.5s ease-in-out;
 }
 .player-image {
     max-width: 350px;
     max-height:max-content;
     width: 100%;
     height: 90vh;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 .center-content {
     flex: 1;
@@ -103,8 +136,9 @@ body{
     font-size: 2.5em;
     margin: 40px 0 20px;
     text-align: center;
+    margin-top: 100px;
 }
-.about{
+.about[id="about"] {
     padding: 20px;
     background-color: var(--text-BG-color);
     border: 2px solid #FF0000;
@@ -122,9 +156,7 @@ body{
     line-height: 1.6;
     margin-bottom: 20px;
 }
-#trophies{
-    margin-top: 100px;
-}
+
 .trophies {
     display: flex;
     justify-content: center;
