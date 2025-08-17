@@ -99,12 +99,8 @@ a:hover{
     text-align: center;
     font-size: 2em;
     color: #FFFFFF;
-    -webkit-text-stroke: 0.05px #FF0000;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-.sentence[dir="rtl"] {
-    -webkit-text-stroke: 0.1px #FF0000;
 }
 
 .navbar {
