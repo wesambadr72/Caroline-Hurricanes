@@ -5,67 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/hurricanes without BG.webp" type="images/webp">
+    <meta name="description" content="Overview of the Carolina Hurricanes hockey team">
+    <meta name="theme-color" content="#0D0300">
+
     <title>CHurricanes overview</title>
 </head>
 <body>
     <nav class="navbar">
-        <picture class="logo">
+        <div class="logo">
             <a href="#title">
-            <source media="(max-width: 100px)" srcset="images/hurricanes.png">
-            <img src="images/hurricanes without BG.png" alt="CHurricanes logo" class="logo-image">
+                <img src="images/hurricanes without BG.webp" alt="CHurricanes logo" class="logo-image">
             </a>
-    </picture>
+        </div>
         <ul class="nav-links">
-            <li><a href="#aboutPlace">ABOUT</a></li>
-            <li><a href="#trophiesPlace">TROPHIES</a></li>
+            <li>
+                <select class="lang-select" id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="ar">عربي</option>
+                </select>
+            </li>
+            <li><a href="#aboutPlace" data-translate="about">ABOUT</a></li>
+            <li><a href="#trophiesPlace" data-translate="trophies">TROPHIES</a></li>
         </ul>
     </nav>
+    
     <div class="players-row" id="title">
-        <img src="images/rod wiout BG.png" alt="Rod Brind'Amour" class="player-image" id="rod">
+            <img src="images/rod wiout BG.png" alt="Rod Brind'Amour" class="player-image" id="rod">
         <div class="center-content">
-            <h1 class="title">CAROLINA</h1>
-            <h1 class="title" id="hur">HURRICANES</h1>
-            <h2 class="sentence">THE MOST FUN TEAM IN HOCKEY</h2>
+            <h1 class="title" data-translate="title">CAROLINA</h1>
+            <h1 class="title hur" data-translate="hur">HURRICANES</h1>
+            <h2 class="sentence" data-translate="sentence">THE MOST FUN TEAM IN HOCKEY</h2>
         </div>
-        <img src="images/aho final.png" alt="Sebastian Aho" class="player-image" id="aho">
+            <img src="images/aho final.png" alt="Sebastian Aho" class="player-image" id="aho">
     </div>
+
     <span id="aboutPlace"></span>
     <div class="about section-hidden">
-    <h2 class="section-title">ABOUT</h2>
-    <div class="about" id="about">
-        <i class="fa-solid fa-hockey-puck fa-2xl" style="color: #ffffff;"></i>
-        <h1 class="dec-title">SHORT DESCRIPTION</h1>
-        <p class="section-textShort">The Carolina Hurricanes (colloquially known as the Canes) are a professional ice hockey team based in <a href="https://en.wikipedia.org/wiki/Raleigh,_North_Carolina">Raleigh, North Carolina</a>. The Hurricanes compete in the <a href="https://en.wikipedia.org/wiki/National_Hockey_League">National Hockey League (NHL)</a> as a member of the Metropolitan Division in the Eastern Conference. The team plays its home games at the <a href="https://en.wikipedia.org/wiki/Lenovo_Center">Lenovo Center</a>.</p>
+    <h2 class="section-title" data-translate="about">ABOUT</h2>
+    <div class="about-section">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <i class="fa-solid fa-hockey-puck fa-2xl" style="color: #ffffff;"></i>
+        </div>
+        <h1 class="dec-title" data-translate="ShortDecTitle">SHORT DESCRIPTION</h1>
+        <p class="section-text" data-translate="ShortDecContent">The Carolina Hurricanes (colloquially known as the Canes) are a professional ice hockey team based in <a href="https://en.wikipedia.org/wiki/Raleigh,_North_Carolina">Raleigh, North Carolina</a>. The Hurricanes compete in the <a href="https://en.wikipedia.org/wiki/National_Hockey_League">National Hockey League (NHL)</a> as a member of the Metropolitan Division in the Eastern Conference. The team plays its home games at the <a href="https://en.wikipedia.org/wiki/Lenovo_Center">Lenovo Center</a>.</p>
     </div>
-    <div class="about" id="about">
-        <i class="fa-solid fa-medal fa-2xl" style="color: #ffffff;"></i>
-        <h1 class="dec-title">LONG DESCRIPTION</h1>
-        <p class="section-textLong">The franchise was formed in 1971 as the New England Whalers of the <a href="https://en.wikipedia.org/wiki/World_Hockey_Association">World Hockey Association (WHA)</a>. The Whalers saw success immediately, winning the Eastern Division in the WHA's first three seasons and becoming the inaugural <a href="https://en.wikipedia.org/wiki/Avco_World_Trophy">Avco World Trophy</a> Champions to cap off the 1972–73 season. The Whalers again competed for the World Trophy in 1978, this time falling short to the Winnipeg Jets in a rematch of the 1973 Avco Cup Final. The franchise joined the NHL in 1979 as part of the <a href="https://en.wikipedia.org/wiki/1979_NHL_expansion">NHL–WHA merger</a>, renaming themselves the Hartford Whalers. The team relocated to North Carolina in 1997, rebranding themselves as the Hurricanes. Carolina advanced to the Stanley Cup Final for the first time in 2002, where they lost to the Detroit Red Wings. The Hurricanes won the 2006 Stanley Cup over the Edmonton Oilers, giving the state of North Carolina its first major professional sports championship and its only major championship as of 2024-25.</p>
+    
+    <div class="about-section">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <i class="fa-solid fa-medal fa-2xl" style="color: #ffffff;"></i>
+        </div>
+        <h1 class="dec-title" data-translate="LongDecTitle">LONG DESCRIPTION</h1>
+        <p class="section-text" data-translate="LongDecContent">The franchise was formed in 1971 as the New England Whalers of the <a href="https://en.wikipedia.org/wiki/World_Hockey_Association">World Hockey Association (WHA)</a>. The Whalers saw success immediately, winning the Eastern Division in the WHA's first three seasons and becoming the inaugural <a href="https://en.wikipedia.org/wiki/Avco_World_Trophy">Avco World Trophy</a> Champions to cap off the 1972–73 season. The Whalers again competed for the World Trophy in 1978, this time falling short to the Winnipeg Jets in a rematch of the 1973 Avco Cup Final. The franchise joined the NHL in 1979 as part of the <a href="https://en.wikipedia.org/wiki/1979_NHL_expansion">NHL–WHA merger</a>, renaming themselves the Hartford Whalers. The team relocated to North Carolina in 1997, rebranding themselves as the Hurricanes. Carolina advanced to the Stanley Cup Final for the first time in 2002, where they lost to the Detroit Red Wings. The Hurricanes won the 2006 Stanley Cup over the Edmonton Oilers, giving the state of North Carolina its first major professional sports championship and its only major championship as of 2024-25.</p>
     </div>
-    </div>
+    
     <span id="trophiesPlace"></span>
-    <h2 class="section-title" id="trophies">TROPHIES</h2>
+    <h2 class="section-title" data-translate="trophies">TROPHIES</h2>
+    
     <div class="trophies">
         <div class="trophy-card">
-            <img src="images/Stanley team.webp" alt="Stanley Cup" class="trophy-image" id="stanley">
+           <img src="images/Stanley team.webp" alt="Stanley Cup" class="trophy-image" id="stanley">
             <div class="trophy-number">1</div>
-            <div class="trophy-title"><a href="https://en.wikipedia.org/wiki/Stanley_Cup">STANLEY CUP</a></div>
+            <div class="trophy-title" data-translate="StanleyCup" onclick="window.open('https://en.wikipedia.org/wiki/Stanley_Cup', '_blank')">STANLEY CUP</div>
             <div class="trophy-text">2005-2006</div>
         </div>
 
         <div class="trophy-card">
-            <img src="images/princeHQ.webp" alt="Prince of Wales Trophy" class="trophy-image" id="prince">
+             <img src="images/princeHQ.webp" alt="Prince of Wales Trophy" class="trophy-image" id="prince">
             <div class="trophy-number">2</div>
-            <div class="trophy-title"><a href="https://en.wikipedia.org/wiki/Prince_of_Wales_Trophy">PRINCE OF WALES TROPHY</a></div>
+            <div class="trophy-title" data-translate="PrinceOfWales" onclick="window.open('https://en.wikipedia.org/wiki/Prince_of_Wales_Trophy', '_blank')">PRINCE OF WALES TROPHY</div>
             <div class="trophy-text">2001-02, 2005-06</div>
         </div>
     </div>
     
     <footer class="footer">
         <div class="footer-content">
-            <p class="footer-text">© 2025 CHurricanes. All rights reserved.<br>
-                <br>Made by <a href="https://wesamlt.netlify.app">WESAM</a> Canes Fan and dev.</p>
-            <img src="images/FirstLogov2.png" alt="My Logo" class="footer-logo">
+            <p class="footer-text" data-translate="rights">© 2025 CHurricanes. All rights reserved.<br><br>Made by <a href="https://wesamlt.netlify.app" data-translate="Wesam">WESAM</a> Canes Fan and dev.</p>
+            <img src="images/FirstLogov2.png" alt="First Logo" class="footer-logo">
         </div>
         <div class="social-icons">
             <a href="https://www.instagram.com/canes/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
